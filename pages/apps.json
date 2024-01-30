@@ -83,7 +83,7 @@
 {"name":"Certificates",
 "short-description":"All devices",
 "icon":"./img/cer.png",
-"link":"https://hiepvk.github.io/cer.zip",
+"link":"https://github.com/hiepvk/ipa/releases/download/ipa-ts/cer.zip",
 "dev":"@Apple",
 "version":"v0.0.0",
 "category":"esign"},
