@@ -107,7 +107,7 @@
 {"name":"Hiepvk Install App",
 "short-description":"iOS All",
 "icon":"./img/ota.png",
-"link":"itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/hiepvk/ipa/main/install.plist",
+"link":"itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/hiepvk/ipa/main/plist/install.plist",
 "dev":"@Hiepvk",
 "version":"iOS All",
 "category":"esign"}
