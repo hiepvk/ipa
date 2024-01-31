@@ -79,6 +79,14 @@
 "dev":"@yyyue",
 "version":"v5.0.2",
 "category":"esign"},
+
+{"name":"ESign 2",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/plist/ESign2.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
+"category":"esign"},
     
 {"name":"Certificates",
 "short-description":"All devices",
