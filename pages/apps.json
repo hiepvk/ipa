@@ -67,7 +67,7 @@
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
 "icon":"./img/ota.png",
-"link":"https://betaprofiles.com/install/block-ota/",
+"link":"https://hiepvk.github.io/Block_OTA.mobileconfig",
 "dev":"@betaprofiles",
 "version":"tvOS 17 beta",
 "category":"other"},
