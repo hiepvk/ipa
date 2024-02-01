@@ -1,4 +1,12 @@
 [
+{"name":"Add Repo TrollApp",
+"short-description":"iOS 14 - 17",
+"icon":"./img/profile.png",
+"link":"trollapps://add?url=https://hiepvk.github.io/ipats",
+"dev":"@Hiepvk",
+"version":"v0.0.0",
+"category":"misakaPurekfd"},
+
 {"name":"Tải IPA",
 "short-description":"iOS 13 - 17",
 "icon":"./img/ipa.png",
