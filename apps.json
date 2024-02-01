@@ -8,7 +8,7 @@
       "name": "AppStore++",
       "bundleIdentifier": "com.cokepokes.AppStorePlus",
       "developerName": "CokePokes",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.cokepokes.AppStorePlus.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.cokepokes.AppStorePlus.png",
       "versions": [
         {
           "version": "1.0.3",
@@ -23,7 +23,7 @@
       "name": "OTADisabler",
       "bundleIdentifier": "com.ichitaso.otadisablerts",
       "developerName": "Ichitaso",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.ichitaso.otadisablerts.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.ichitaso.otadisablerts.png",
       "versions": [
         {
           "version": "1.1.0",
@@ -45,7 +45,7 @@
       "name": "TrollSpeed",
       "bundleIdentifier": "ch.xxtou.hudapp",
       "developerName": "Lessica",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/ch.xxtou.hudapp.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/ch.xxtou.hudapp.png",
       "versions": [
         {
           "version": "1.11.2",
@@ -74,7 +74,7 @@
       "name": "Documents",
       "bundleIdentifier": "com.readdle.ReaddleDocsIPad",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.readdle.ReaddleDocsIPad.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.readdle.ReaddleDocsIPad.png",
       "versions": [
         {
           "version": "8.10.2",
@@ -103,7 +103,7 @@
       "name": "Facebook",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.facebook.Facebook.png",
       "versions": [
         {
           "version": "448.1.0",
@@ -153,7 +153,7 @@
       "name": "FacebookNoAds",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.facebook.Facebook.png",
       "versions": [
         {
           "version": "448.1.0",
@@ -203,7 +203,7 @@
       "name": "FacebookWolf",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.facebook.Facebook.png",
       "versions": [
         {
           "version": "448.1.0",
@@ -253,7 +253,7 @@
       "name": "MessengerLSN",
       "bundleIdentifier": "com.facebook.Messenger",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Messenger.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.facebook.Messenger.png",
       "versions": [
         {
           "version": "443.0.0",
@@ -310,7 +310,7 @@
       "name": "Filza",
       "bundleIdentifier": "com.tigisoftware.Filza",
       "developerName": "tigisoftware",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.tigisoftware.Filza.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.tigisoftware.Filza.png",
       "versions": [
         {
           "version": "4.0",
@@ -325,7 +325,7 @@
       "name": "ibisPaint X",
       "bundleIdentifier": "jp.ne.ibis.ibisPaintX",
       "developerName": "Lê Tí",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/jp.ne.ibis.ibisPaintX.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/jp.ne.ibis.ibisPaintX.png",
       "versions": [
         {
           "version": "11.2.1",
@@ -347,7 +347,7 @@
       "name": "Instagram Rocket",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.burbn.instagram.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.burbn.instagram.png",
       "versions": [
         {
           "version": "315.1.2",
@@ -397,7 +397,7 @@
       "name": "Instagram BH",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.burbn.instagram.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.burbn.instagram.png",
       "versions": [
         {
           "version": "315.1.2",
@@ -447,7 +447,7 @@
       "name": "DiuTube",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "Lê Tí",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
 		{
           "version": "19.04.3",
@@ -490,7 +490,7 @@
       "name": "uYou",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
 		{
           "version": "19.04.3",
@@ -533,7 +533,7 @@
       "name": "YouTube Reborn",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
         {
           "version": "19.04.3",
@@ -576,7 +576,7 @@
       "name": "AppDump2",
       "bundleIdentifier": "cn.gblw.AppsDump",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/cn.bswbw.AppsDump.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/cn.bswbw.AppsDump.png",
       "versions": [
         {
           "version": "2.0.7",
@@ -598,7 +598,7 @@
       "name": "TrollDecrypt",
       "bundleIdentifier": "com.fiore.trolldecrypt",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.fiore.trolldecrypt.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.fiore.trolldecrypt.png",
       "versions": [
         {
           "version": "1.1.2",
@@ -620,7 +620,7 @@
       "name": "Spotify",
       "bundleIdentifier": "com.spotify.client",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.spotify.client.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.spotify.client.png",
       "versions": [
         {
           "version": "8.6.42",
@@ -635,7 +635,7 @@
       "name": "Speedtest",
       "bundleIdentifier": "com.ookla.speedtest",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.ookla.speedtest.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.ookla.speedtest.png",
       "versions": [
         {
           "version": "5.3.0",
@@ -650,7 +650,7 @@
       "name": "CamScanner",
       "bundleIdentifier": "com.intsig.CamScannerLite",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.intsig.CamScannerLite.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.intsig.CamScannerLite.png",
       "versions": [
         {
           "version": "6.58.1",
