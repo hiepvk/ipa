@@ -104,14 +104,6 @@
 "version":"v0.0.0",
 "category":"esign"},
 
-{"name":"Add Repo TrollApp",
-"short-description":"iOS 14 - 17",
-"icon":"./img/profile.png",
-"link":"trollapps://add?url=repo[aHR0cHM6Ly9pcy5nZC9hcHBzdHM=]",
-"dev":"@Hiepvk",
-"version":"v0.0.0",
-"category":"esign"},
-
 {"name":"Hiepvk Install App",
 "short-description":"iOS All",
 "icon":"./img/ota.png",
