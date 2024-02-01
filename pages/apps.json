@@ -2,7 +2,7 @@
 {"name":"Add Repo TrollApp",
 "short-description":"iOS 14 - 17",
 "icon":"./img/profile.png",
-"link":"trollapps://add?url=hiepvk.github.io/ipats",
+"link":"trollapps://add?url=repo[aGllcHZrLmdpdGh1Yi5pby9pcGF0cw==]",
 "dev":"@Hiepvk",
 "version":"v0.0.0",
 "category":"misakaPurekfd"},
