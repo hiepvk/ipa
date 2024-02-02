@@ -646,6 +646,21 @@
         }
       ]
     },
+	{
+      "name": "Geometry Dash",
+      "bundleIdentifier": "com.robtop.geometryjump",
+      "developerName": "Hiepvk",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.robtop.geometryjump.png",
+      "versions": [
+        {
+          "version": "2.205",
+          "date": "2024-02-01",
+          "size": 152043520,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/Geometry-2.205.ipa",
+          "localizedDescription": ""
+        }
+      ]
+    },
     {
       "name": "CamScanner",
       "bundleIdentifier": "com.intsig.CamScannerLite",
