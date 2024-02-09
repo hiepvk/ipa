@@ -16,7 +16,7 @@
 "category":"misakaPurekfd"},    
     
 {"name":"TrollMisaka",
-"short-description":"iOS 14 - 15.7.1/15.8.2 (A9 - A11), Sử dụng AltStore",
+"short-description":"iOS 14 - 15.7.1/15.8.1, Sử dụng AltStore",
 "icon":"./img/TrollMisaka.png",
 "link":"https://github.com/straight-tamago/TrollMisaka/releases/tag/2.0-Beta",
 "dev":"@straight-tamago",
