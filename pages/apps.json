@@ -48,6 +48,14 @@
 "version":"v1.2",
 "category":"other"},
 
+{"name":"TrollStarTE",
+"short-description":"iOS/iPadOS 16.0 - 16.6.1",
+"icon":"./img/TrollStar.png",
+"link":"https://is.gd/TrollMisaka",
+"dev":"@thuthuatjb",
+"version":"v3.0",
+"category":"other"},
+
 {"name":"TrollInstallerMDC",
 "short-description":"iOS 15.0 - 15.7.1/16.1.2",
 "icon":"./img/mdc.png",
