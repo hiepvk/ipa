@@ -82,7 +82,7 @@
 
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
-"icon":"./icons/Disabler.png",
+"icon":"./icons/OTADisabler.png",
 "link":"https://hiepvk.github.io/BlockOTA_17.mobileconfig",
 "dev":"@betaprofiles",
 "version":"tvOS 17 beta",
