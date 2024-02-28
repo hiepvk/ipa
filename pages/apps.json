@@ -74,7 +74,7 @@
 
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
-"icon":"./icons/no-ios.png",
+"icon":"./icons/noios.png",
 "link":"https://hiepvk.github.io/Block_OTA.mobileconfig",
 "dev":"@dev1lb0rn",
 "version":"v0.0.0",
