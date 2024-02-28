@@ -112,9 +112,9 @@
 "version":"v0.0.0",
 "category":"esign"},
 
-{"name":"Hiepvk Install App",
+{"name":"Install App",
 "short-description":"iOS All",
-"icon":"./img/ota.png",
+"icon":"./icons/down.png",
 "link":"https://is.gd/CP2j61",
 "dev":"@Hiepvk",
 "version":"iOS All",
