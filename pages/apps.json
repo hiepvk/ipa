@@ -1,7 +1,7 @@
 [
 {"name":"Add Repo TrollApp",
 "short-description":"iOS 14 - 17",
-"icon":"./img/profile.png",
+"icon":"./icons/TrollApps.png",
 "link":"trollapps://add?url=repo[aGllcHZrLmdpdGh1Yi5pby9pcGF0cw==]",
 "dev":"@Hiepvk",
 "version":"v0.0.0",
@@ -9,7 +9,7 @@
 
 {"name":"Tải IPA",
 "short-description":"iOS 13 - 17",
-"icon":"./img/ipa.png",
+"icon":"./icons/ipa.png",
 "link":"https://github.com/hiepvk/ipa/releases",
 "dev":"@Hiepvk",
 "version":"v0.0.0",
@@ -17,7 +17,7 @@
     
 {"name":"TrollMisaka",
 "short-description":"iOS 14 - 15.7.1/15.8.1, Sử dụng AltStore",
-"icon":"./img/TrollMisaka.png",
+"icon":"./icons/TrollMisaka.png",
 "link":"https://github.com/straight-tamago/TrollMisaka/releases/tag/2.0-Beta",
 "dev":"@straight-tamago",
 "version":"v2.0",
@@ -25,7 +25,7 @@
 
 {"name":"Misaka",
 "short-description":"iOS 15.0 - 16.6.1",
-"icon":"./img/misaka.png",
+"icon":"./icons/misaka.png",
 "link":"https://is.gd/misakaa",
 "dev":"@straight-tamago",
 "version":"v8.2.4",
@@ -33,7 +33,7 @@
 
 {"name":"PureKFD",
 "short-description":"iOS 14.0 - 16.6.1",
-"icon":"./img/purekfd.png",
+"icon":"./icons/purekfd.png",
 "plist":"PureKFD",
 "link":"https://is.gd/EiGgmI",
 "dev":"@Lrdsnow",
@@ -42,7 +42,7 @@
 
 {"name":"TrollStar",
 "short-description":"iOS/iPadOS 16.0 - 16.6.1",
-"icon":"./img/TrollStar.png",
+"icon":"./icons/TrollStar.png",
 "link":"https://is.gd/TrollStar",
 "dev":"@huynguyen",
 "version":"v1.2",
@@ -50,7 +50,7 @@
 
 {"name":"TrollStarTE",
 "short-description":"iOS/iPadOS 16.0 - 16.6.1",
-"icon":"./img/TrollStar.png",
+"icon":"./icons/TrollStar.png",
 "link":"https://is.gd/TrollMisaka",
 "dev":"@thuthuatjb",
 "version":"v3.0",
@@ -58,7 +58,7 @@
 
 {"name":"TrollInstallerMDC",
 "short-description":"iOS 15.0 - 15.7.1/16.1.2",
-"icon":"./img/mdc.png",
+"icon":"./icons/mdc.png",
 "link":"https://is.gd/TrollInstallerMDC",
 "dev":"@dhinakg",
 "version":"v1.0.2",
@@ -66,7 +66,7 @@
 
 {"name":"nekoJB",
 "short-description":"iOS 15.0 - 15.8 (A9 - A11)",
-"icon":"./img/nekojb.png",
+"icon":"./icons/nekojb.png",
 "link":"https://is.gd/nekoJB",
 "dev":"@HAHALOSAH",
 "version":"v0.1.0 beta5",
@@ -74,7 +74,7 @@
 
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
-"icon":"./img/ota.png",
+"icon":"./icons/no-ios.png",
 "link":"https://hiepvk.github.io/Block_OTA.mobileconfig",
 "dev":"@dev1lb0rn",
 "version":"v0.0.0",
@@ -82,7 +82,7 @@
 
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
-"icon":"./img/ota.png",
+"icon":"./icons/Disabler.png",
 "link":"https://hiepvk.github.io/BlockOTA_17.mobileconfig",
 "dev":"@betaprofiles",
 "version":"tvOS 17 beta",
@@ -90,7 +90,7 @@
 
 {"name":"ESign 1",
 "short-description":"iOS 12 - 17",
-"icon":"./img/esign.png",
+"icon":"./icons/esign.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/plist/ESign1.plist",
 "dev":"@yyyue",
 "version":"v5.0.2",
@@ -98,7 +98,7 @@
 
 {"name":"ESign 2",
 "short-description":"iOS 12 - 17",
-"icon":"./img/esign.png",
+"icon":"./icons/esign.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/plist/ESign2.plist",
 "dev":"@yyyue",
 "version":"v5.0.2",
@@ -106,7 +106,7 @@
     
 {"name":"Certificates",
 "short-description":"All devices",
-"icon":"./img/cer.png",
+"icon":"./icons/cer.png",
 "link":"https://github.com/hiepvk/ipa/releases/download/ipa-ts/cer.zip",
 "dev":"@Apple",
 "version":"v0.0.0",
