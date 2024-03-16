@@ -96,12 +96,12 @@
 "version":"v5.0.2",
 "category":"esign"},
 
-{"name":"ESign 2",
-"short-description":"iOS 12 - 17",
+{"name":"DNS Khoindvn",
+"short-description":"iOS 14 - 17",
 "icon":"./icons/esign.png",
-"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/plist/ESign2.plist",
-"dev":"@yyyue",
-"version":"v5.0.2",
+"link":"https://github.com/dns-khoindvn/dns-khoindvn/raw/main/dns/khoindvn.mobileconfig",
+"dev":"@khoindvn",
+"version":"v1.0",
 "category":"esign"},
     
 {"name":"Certificates",
