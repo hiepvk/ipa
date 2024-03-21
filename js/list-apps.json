@@ -62,6 +62,14 @@
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign5.plist",
 "dev":"@yyyue",
 "version":"v5.0.2",
+"category":"cate2"},
+
+{"name":"Migu Digital Media Co.",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign6.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
 "category":"cate2"}
 
 ]
