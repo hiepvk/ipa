@@ -68,6 +68,6 @@ function setupAppsWithCategory(category) {
             document.getElementById(listContainer).appendChild(coldiv);
         });
     };
-    httpReq.open("GET", "https://raw.githubusercontent.com/hiepvk/ipa/main/pages/apps.json", true);
+    httpReq.open("GET", "https://raw.githubusercontent.com/hiepvk/ipa/main/js/list-apps.json", true);
     httpReq.send();
 }
