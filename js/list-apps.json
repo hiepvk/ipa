@@ -1,11 +1,35 @@
 [
 
+{"name":"ADGUARD DNS",
+"short-description":"iOS 14 - 17",
+"icon":"./img/AdGuardDNS.png",
+"link":"https://hiepvk.github.io/adguard-dns.mobileconfig",
+"dev":"@Hiepvk",
+"version":"v1.0",
+"category":"cate1"},
+
+{"name":"NEXTDNS",
+"short-description":"iOS 14 - 17",
+"icon":"./img/NextDNS.png",
+"link":"https://tinyurl.com/27rkha9e",
+"dev":"@Hiepvk",
+"version":"v1.0",
+"category":"cate1"},
+    
+{"name":"Certificates",
+"short-description":"All devices",
+"icon":"./img/cer.png",
+"link":"https://github.com/hiepvk/ipa/releases/download/ipa-ts/cer.zip",
+"dev":"@Apple",
+"version":"v0.0.0",
+"category":"cate1"},  
+  
 {"name":"ESign 1",
 "short-description":"iOS 12 - 17",
 "icon":"./img/esign.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign1.plist",
 "dev":"@yyyue",
 "version":"v5.0.2",
-"category":"cate1"}
+"category":"cate2"}
 
 ]
