@@ -1,0 +1,11 @@
+[
+
+{"name":"ESign 1",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign1.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
+"category":"cate1"}
+
+]
