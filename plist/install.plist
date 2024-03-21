@@ -33,13 +33,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.hiepvk.install</string>
+				<string>com.apple.tips</string>
 				<key>bundle-version</key>
-				<string>1.0.0</string>
+				<string>v4.8</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>Hiepvk Install</string>
+				<string>Tips</string>
 			</dict>
 		</dict>
 	</array>
