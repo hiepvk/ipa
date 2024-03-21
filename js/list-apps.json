@@ -24,10 +24,18 @@
 "version":"v0.0.0",
 "category":"cate1"},  
   
-{"name":"ESign 1",
+{"name":"Rizhao Sunday Power Generation Co., Ltd",
 "short-description":"iOS 12 - 17",
 "icon":"./img/esign.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign1.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
+"category":"cate2"},
+
+{"name":"Bank of Chongqing Co.,Ltd",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign2.plist",
 "dev":"@yyyue",
 "version":"v5.0.2",
 "category":"cate2"}
