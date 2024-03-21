@@ -96,11 +96,19 @@
 "version":"v5.0.2",
 "category":"esign"},
 
-{"name":"DNS Khoindvn",
+{"name":"ADGUARD DNS",
 "short-description":"iOS 14 - 17",
 "icon":"./icons/esign.png",
-"link":"https://github.com/dns-khoindvn/dns-khoindvn/raw/main/dns/khoindvn.mobileconfig",
-"dev":"@khoindvn",
+"link":"https://adguard-dns.io/public_api/v1/settings/a3e35093-c6d8-484e-9daf-7922c9a5f80f/doh_mobileconfig.xml",
+"dev":"@Hiepvk",
+"version":"v1.0",
+"category":"esign"},
+
+{"name":"NEXTDNS",
+"short-description":"iOS 14 - 17",
+"icon":"./icons/esign.png",
+"link":"https://adguard-dns.io/public_api/v1/settings/a3e35093-c6d8-484e-9daf-7922c9a5f80f/doh_mobileconfig.xml",
+"dev":"@Hiepvk",
 "version":"v1.0",
 "category":"esign"},
     
