@@ -70,6 +70,38 @@
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign6.plist",
 "dev":"@yyyue",
 "version":"v5.0.2",
+"category":"cate2"},
+
+{"name":"7",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign7.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
+"category":"cate2"},
+
+{"name":"8",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign8.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
+"category":"cate2"},
+
+{"name":"9",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign9.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
+"category":"cate2"},
+
+{"name":"10",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign10.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
 "category":"cate2"}
 
 ]
