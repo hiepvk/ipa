@@ -99,7 +99,7 @@
 {"name":"ADGUARD DNS",
 "short-description":"iOS 14 - 17",
 "icon":"./icons/AdGuardDNS.png",
-"link":"https://adguard-dns.io/public_api/v1/settings/a3e35093-c6d8-484e-9daf-7922c9a5f80f/doh_mobileconfig.xml",
+"link":"https://adguard-dns.io/public_api/v1/settings/a7ae4704-c17c-4b67-b52f-d3e56f2838c2/doh_mobileconfig.xml",
 "dev":"@Hiepvk",
 "version":"v1.0",
 "category":"esign"},
