@@ -98,7 +98,7 @@
 
 {"name":"ADGUARD DNS",
 "short-description":"iOS 14 - 17",
-"icon":"./icons/esign.png",
+"icon":"./icons/AdGuardDNS.png",
 "link":"https://adguard-dns.io/public_api/v1/settings/a3e35093-c6d8-484e-9daf-7922c9a5f80f/doh_mobileconfig.xml",
 "dev":"@Hiepvk",
 "version":"v1.0",
@@ -106,7 +106,7 @@
 
 {"name":"NEXTDNS",
 "short-description":"iOS 14 - 17",
-"icon":"./icons/esign.png",
+"icon":"./icons/NextDNS.png",
 "link":"https://tinyurl.com/27rkha9e",
 "dev":"@Hiepvk",
 "version":"v1.0",
