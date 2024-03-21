@@ -102,6 +102,14 @@
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign10.plist",
 "dev":"@yyyue",
 "version":"v5.0.2",
+"category":"cate2"},
+
+{"name":"Sunshine Insurance Group Co",
+"short-description":"iOS 12 - 17",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ESign/plist/ESign11.plist",
+"dev":"@yyyue",
+"version":"v5.0.2",
 "category":"cate2"}
 
 ]
