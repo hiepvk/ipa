@@ -1,13 +1,5 @@
 [
 
-{"name":"Block Ads - Anti Cert",
-"short-description":"iOS 14 - 17",
-"icon":"./img/NextDNS.png",
-"link":"https://hiepvk.github.io/NoAds-AntiCert.mobileconfig",
-"dev":"@Hiepvk",
-"version":"v1.0",
-"category":"cate1"},    
-    
 {"name":"ADGUARD DNS",
 "short-description":"iOS 14 - 17",
 "icon":"./img/AdGuardDNS.png",
