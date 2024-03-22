@@ -1,17 +1,9 @@
 [
 
-{"name":"ADGUARD DNS",
-"short-description":"iOS 14 - 17",
-"icon":"./img/AdGuardDNS.png",
-"link":"https://hiepvk.github.io/adguard-dns.mobileconfig",
-"dev":"@Hiepvk",
-"version":"v1.0",
-"category":"cate1"},
-
-{"name":"NEXTDNS",
+{"name":"Anti Cert nhutgg",
 "short-description":"iOS 14 - 17",
 "icon":"./img/NextDNS.png",
-"link":"https://tinyurl.com/27rkha9e",
+"link":"https://nhutgg.io.vn/mobileconfig/dnscustom.mobileconfig",
 "dev":"@Hiepvk",
 "version":"v1.0",
 "category":"cate1"},
