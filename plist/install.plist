@@ -33,13 +33,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.apple.tips</string>
+				<string>com.vkh.ios</string>
 				<key>bundle-version</key>
-				<string>v4.8</string>
+				<string>1.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>Tips</string>
+				<string>Hiepvk</string>
 			</dict>
 		</dict>
 	</array>
