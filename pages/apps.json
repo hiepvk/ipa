@@ -96,6 +96,14 @@
 "version":"v5.0.2",
 "category":"esign"},
 
+{"name":"TrollStore Tiếng Việt",
+"short-description":"iOS 12 - 17",
+"icon":"./icons/mdc.png",
+"link":"apple-magnifier://install?url=https://github.com/hiepvk/TrollStore-vi/releases/latest/download/TrollStore.tar",
+"dev":"@yyyue",
+"version":"v5.0.2",
+"category":"esign"},
+
 {"name":"Install App",
 "short-description":"iOS All",
 "icon":"./icons/down.png",
