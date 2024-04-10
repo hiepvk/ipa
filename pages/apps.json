@@ -23,6 +23,14 @@
 "version":"v1.0",
 "category":"misakaPurekfd"},
 
+{"name":"TrollInstallX",
+"short-description":"iOS 14 - 16.6.1",
+"icon":"./icons/trollinstallx.png",
+"link":"https://is.gd/TrollMisaka",
+"dev":"@Afile",
+"version":"v1.0",
+"category":"misakaPurekfd"},
+
 {"name":"nekoJB",
 "short-description":"iOS 15.0 - 15.8 (A9 - A11)",
 "icon":"./icons/nekojb.png",
