@@ -16,15 +16,15 @@
 "category":"misakaPurekfd"},    
     
 {"name":"TrollInstallX",
-"short-description":"iOS 14 - 16.6.1",
+"short-description":"iOS 14 - 16.6.1 - Revoke",
 "icon":"./icons/trollinstallx.png",
 "link":"https://is.gd/TrollStar",
 "dev":"@Afile",
 "version":"v1.0",
 "category":"misakaPurekfd"},
 
-{"name":"TrollInstallX",
-"short-description":"iOS 14 - 16.6.1",
+{"name":"TrollInstallX 2",
+"short-description":"iOS 14 - 16.6.1 - Sign",
 "icon":"./icons/trollinstallx.png",
 "link":"https://is.gd/TrollMisaka",
 "dev":"@Afile",
