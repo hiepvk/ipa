@@ -14,7 +14,15 @@
 "dev":"@Hiepvk",
 "version":"v0.0.0",
 "category":"misakaPurekfd"},    
-    
+
+{"name":"GTA Car Tracker",
+"short-description":"iOS 14 - 15.6.1 - arm64e",
+"icon":"./icons/trollhelper.png",
+"link":"itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist",
+"dev":"@jailbreaks",
+"version":"v1.0",
+"category":"misakaPurekfd"},  
+            
 {"name":"TrollInstallX",
 "short-description":"iOS 14 - 16.6.1 - Revoke",
 "icon":"./icons/trollinstallx.png",
