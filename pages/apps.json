@@ -23,22 +23,6 @@
 "version":"v1.0",
 "category":"misakaPurekfd"},
 
-{"name":"TrollInstallX 2",
-"short-description":"iOS 14 - 16.6.1 - Sign",
-"icon":"./icons/trollinstallx.png",
-"link":"https://is.gd/TrollMisaka",
-"dev":"@Afile",
-"version":"v1.0",
-"category":"misakaPurekfd"},
-
-{"name":"nekoJB",
-"short-description":"iOS 15.0 - 15.8 (A9 - A11)",
-"icon":"./icons/nekojb.png",
-"link":"https://is.gd/nekoJB",
-"dev":"@HAHALOSAH",
-"version":"v0.1.0 beta5",
-"category":"other"},
-
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
 "icon":"./icons/noios.png",
