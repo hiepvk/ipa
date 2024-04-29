@@ -1,19 +1,4 @@
 [
-{"name":"Add Repo TrollApp",
-"short-description":"iOS 14 - 17",
-"icon":"./icons/TrollApps.png",
-"link":"trollapps://add?url=repo[aGllcHZrLmdpdGh1Yi5pby9pcGF0cw==]",
-"dev":"@Hiepvk",
-"version":"v0.0.0",
-"category":"misakaPurekfd"},
-
-{"name":"Tải IPA",
-"short-description":"iOS 13 - 17",
-"icon":"./icons/ipa.png",
-"link":"https://github.com/hiepvk/ipa/releases",
-"dev":"@Hiepvk",
-"version":"v0.0.0",
-"category":"misakaPurekfd"},    
 
 {"name":"GTA Car Tracker",
 "short-description":"iOS 14 - 15.6.1 - arm64e",
@@ -23,7 +8,7 @@
 "version":"v1.0",
 "category":"misakaPurekfd"},  
             
-{"name":"TrollInstallX",
+{"name":"TrollInstallerX",
 "short-description":"iOS 14 - 16.6.1 - Revoke",
 "icon":"./icons/trollinstallx.png",
 "link":"https://is.gd/TrollStar",
