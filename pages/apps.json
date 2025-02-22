@@ -27,9 +27,9 @@
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
 "icon":"./icons/OTADisabler.png",
-"link":"/BlockOTA_17.mobileconfig",
+"link":"https://betaprofiles.com/dl/block-ota/BlockOTA_18.mobileconfig",
 "dev":"@betaprofiles",
-"version":"tvOS 17 beta",
+"version":"tvOS 18 beta",
 "category":"other"},
 
 {"name":"ESign",
