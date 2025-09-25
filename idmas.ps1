@@ -14,12 +14,13 @@ Write-Host "Da tai xuong thanh cong."
 Write-Host "Dang bat dau qua trinh cai dat..."
 
 # Run the installer in silent mode with administrator privileges
-Start-Process -FilePath "$Path\$Installer" -Verb RunAs -Wait
+Start-Process -FilePath "$Path\$Installer"
 
 Write-Host "Cai dat hoan tat."
 Write-Host "Dang don dep file cai dat..."
 
 # Delete the downloaded installer file
 Remove-Item "$Path\$Installer" -ErrorAction SilentlyContinue
+
 
 Write-Host "Hoan tat."
