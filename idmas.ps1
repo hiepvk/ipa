@@ -14,7 +14,16 @@ Write-Host "Da tai xuong thanh cong."
 Write-Host "Dang bat dau qua trinh cai dat..."
 
 # Run the installer in silent mode with administrator privileges
-Start-Process -FilePath "$Path\$Installer"
+$env:ComSpec = "$env:SystemRoot\system32\cmd.exe"
+$chkcmd = & $env:ComSpec /c "echo CMD is working"
+if ($chkcmd -notcontains "CMD is working") {
+    Write-Warning "cmd.exe is not working.`nReport this issue at $troubleshoot"
+}
+saps -FilePath $env:ComSpec -ArgumentList "/c """"$FilePath"" $args""" -Wait
+CheckFile $FilePath
+
+$FilePaths = @("$env:SystemRoot\Temp\IASL.cmd.cmd", "$env:USERPROFILE\AppData\Local\Temp\IASL.cmd.cmd")
+foreach ($FilePath in $FilePaths) { Get-Item $FilePath | Remove-Item }
 
 Write-Host "Cai dat hoan tat."
 Write-Host "Dang don dep file cai dat..."
@@ -24,3 +33,4 @@ Remove-Item "$Path\$Installer" -ErrorAction SilentlyContinue
 
 
 Write-Host "Hoan tat."
+
