@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khai Báo Y Tế Hàng Hóa & Phương Tiện</title>
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@1.1.1/dist/fontkit.umd.js"></script>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 850px;
+            background: #fff;
+            margin: 0 auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 25px;
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #34495e;
+            font-size: 14px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: "Times New Roman", Times, serif;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .row-3 {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 10px;
+            background: #fdfdfd;
+            padding: 10px;
+            border: 1px dashed #ced4da;
+            border-radius: 4px;
+        }
+        .row-5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            margin-bottom: 10px;
+            background: #fdfdfd;
+            padding: 10px;
+            border: 1px dashed #ced4da;
+            border-radius: 4px;
+        }
+        .sub-title {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .status-box {
+            background-color: #d3f9d8;
+            padding: 12px;
+            border: 1px solid #b2f2bb;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #2b8a3e;
+        }
+        .truck-item {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .truck-header {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-add {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn-add:hover {
+            background-color: #2980b9;
+        }
+        .btn-remove {
+            color: #e74c3c;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+            border: none;
+            background: none;
+        }
+        .btn-submit {
+            background-color: #2ecc71;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 25px;
+            box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+            font-family: "Times New Roman", Times, serif;
+        }
+        .btn-submit:hover {
+            background-color: #27ae60;
+        }
+        .loading-text {
+            display: none;
+            text-align: center;
+            color: #e67e22;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>TẠO GIẤY KHAI BÁO Y TẾ TỰ ĐỘNG</h2>
+    
+    <div class="status-box">
+        <strong>🚀 Cập nhật phôi 2 dòng:</strong> Đã mở rộng thêm các ô nhập liệu cho Dòng số 2 ở cả phần Khai hàng hóa và Khai phương tiện tại Trang 1.
+    </div>
+
+    <form id="declarationForm">
+        <h3>1. Phần khai hàng hoá (Trang 1)</h3>
+        <div class="row">
+            <div class="form-group">
+                <label style="color: #2980b9;">Ngày, tháng, năm (Khai hàng hóa):</label>
+                <input type="text" id="dateCargo" placeholder="VD: 08/07/2026" oninput="syncDates()">
+            </div>
+            <div class="form-group">
+                <label>Tên chủ hàng:</label>
+                <input type="text" id="goodsOwner" placeholder="Nhập tên chủ hàng">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Địa chỉ chủ hàng:</label>
+            <input type="text" id="ownerAddress" placeholder="Nhập địa chỉ">
+        </div>
+
+        <div class="sub-title">BẢNG DANH MỤC HÀNG HÓA (TRANG 1)</div>
+        
+        <div class="row-3">
+            <div class="form-group">
+                <label>Danh mục hàng hóa (Dòng 1):</label>
+                <input type="text" id="page1CargoName1" placeholder="VD: Tạp hóa">
+            </div>
+            <div class="form-group">
+                <label>Số lượng (Dòng 1):</label>
+                <input type="text" id="page1CargoQty1" placeholder="VD: 100 kiện">
+            </div>
+            <div class="form-group">
+                <label>Trọng lượng (Dòng 1):</label>
+                <input type="text" id="page1CargoWeight1" placeholder="VD: 28000 kg">
+            </div>
+        </div>
+
+        <div class="row-3">
+            <div class="form-group">
+                <label>Danh mục hàng hóa (Dòng 2):</label>
+                <input type="text" id="page1CargoName2" placeholder="VD: Linh kiện">
+            </div>
+            <div class="form-group">
+                <label>Số lượng (Dòng 2):</label>
+                <input type="text" id="page1CargoQty2" placeholder="Có thể để trống">
+            </div>
+            <div class="form-group">
+                <label>Trọng lượng (Dòng 2):</label>
+                <input type="text" id="page1CargoWeight2" placeholder="Có thể để trống">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Tổng cộng Số lượng & Quy cách đóng gói:</label>
+                <input type="text" id="page1TotalQty" placeholder="VD: 100 kiện">
+            </div>
+            <div class="form-group">
+                <label>Tổng cộng Trọng lượng (Total Gross weight):</label>
+                <input type="text" id="page1TotalWeight" placeholder="VD: 28000 kg">
+            </div>
+        </div>
+
+        <h3>2. Phần khai phương tiện (Trang 1)</h3>
+        <div class="row">
+            <div class="form-group">
+                <label>Ngày, tháng, năm đến cửa khẩu (Khai phương tiện):</label>
+                <input type="text" id="dateConveyance" placeholder="Sẽ tự động điền...">
+            </div>
+            <div class="form-group">
+                <label>Tên người điều khiển / chủ phương tiện:</label>
+                <input type="text" id="operatorName" placeholder="Nhập tên tài xế / chủ xe">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Địa chỉ phương tiện:</label>
+            <input type="text" id="conveyanceAddress" placeholder="Nhập địa chỉ">
+        </div>
+
+        <div class="sub-title">BẢNG SỐ LIỆU PHƯƠNG TIỆN (TRANG 1)</div>
+        
+        <div class="row-5">
+            <div class="form-group">
+                <label>Số hiệu / biển số (D1):</label>
+                <input type="text" id="p1RegNo1" placeholder="15C-133.97">
+            </div>
+            <div class="form-group">
+                <label>Số lượng (D1):</label>
+                <input type="text" id="p1Qty1" placeholder="1">
+            </div>
+            <div class="form-group">
+                <label>Trọng tải (D1):</label>
+                <input type="text" id="p1Tonnage1" placeholder="35">
+            </div>
+            <div class="form-group">
+                <label>Nhân viên (D1):</label>
+                <input type="text" id="p1Staff1" placeholder="1">
+            </div>
+            <div class="form-group">
+                <label>Hành khách (D1):</label>
+                <input type="text" id="p1Passenger1" placeholder="0">
+            </div>
+        </div>
+
+        <div class="row-5">
+            <div class="form-group">
+                <label>Số hiệu / biển số (D2):</label>
+                <input type="text" id="p1RegNo2" placeholder="15C-222.22">
+            </div>
+            <div class="form-group">
+                <label>Số lượng (D2):</label>
+                <input type="text" id="p1Qty2" placeholder="Có thể để trống">
+            </div>
+            <div class="form-group">
+                <label>Trọng tải (D2):</label>
+                <input type="text" id="p1Tonnage2" placeholder="Có thể để trống">
+            </div>
+            <div class="form-group">
+                <label>Nhân viên (D2):</label>
+                <input type="text" id="p1Staff2" placeholder="Có thể để trống">
+            </div>
+            <div class="form-group">
+                <label>Hành khách (D2):</label>
+                <input type="text" id="p1Passenger2" placeholder="Có thể để trống">
+            </div>
+        </div>
+
+        <h3>3. Danh sách phương tiện vận tải & Hàng hóa (Trang 2)</h3>
+        
+        <div class="form-group" style="max-width: 300px; margin-bottom: 20px;">
+            <label>Ngày, tháng, năm / Date (Trang 2):</label>
+            <input type="text" id="page2SignDate" placeholder="Sẽ tự động điền...">
+        </div>
+        
+        <div id="truckContainer">
+            <div class="truck-item" data-index="1">
+                <div class="truck-header">
+                    <span>Thông tin Xe số 1 (Dòng 1 trong bảng trang 2)</span>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label>Số hiệu / Biển số xe (Registration No.):</label>
+                        <input type="text" class="truckPlate" placeholder="VD: 15C-133.97">
+                    </div>
+                    <div class="form-group">
+                        <label>Tải trọng xe (Net Tonnage):</label>
+                        <input type="text" class="netTonnage" placeholder="VD: 35">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label>Trọng lượng hàng hóa (Gross Weight):</label>
+                        <input type="text" class="grossWeight" placeholder="VD: 28 tấn">
+                    </div>
+                    <div class="form-group">
+                        <label>Danh mục hàng hóa (Name of Cargo):</label>
+                        <input type="text" class="cargoName" placeholder="VD: Linh kiện điện tử">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Số nhân viên (Number of staff):</label>
+                    <input type="text" class="staffNum" placeholder="VD: 1">
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn-add" onclick="addTruckRow()">➕ Thêm dòng xe mới</button>
+
+        <button type="button" class="btn-submit" id="submitBtn" onclick="generatePDF()">XUẤT FILE PDF MỚI</button>
+        <div id="loadingText" class="loading-text">Đang tải phôi, font và tiến hành xử lý chèn chữ, vui lòng đợi...</div>
+    </form>
+</div>
+
+<script>
+    let truckCount = 1;
+
+    function syncDates() {
+        const primaryDate = document.getElementById('dateCargo').value;
+        document.getElementById('dateConveyance').value = primaryDate;
+        document.getElementById('page2SignDate').value = primaryDate;
+    }
+
+    function addTruckRow() {
+        truckCount++;
+        const container = document.getElementById('truckContainer');
+        
+        const truckHtml = `
+            <div class="truck-item" id="truck_row_${truckCount}" data-index="${truckCount}">
+                <div class="truck-header">
+                    <span>Thông tin Xe số ${truckCount} (Dòng ${truckCount} trong bảng trang 2)</span>
+                    <button type="button" class="btn-remove" onclick="removeTruckRow(${truckCount})">❌ Xóa dòng này</button>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label>Số hiệu / Biển số xe (Registration No.):</label>
+                        <input type="text" class="truckPlate" placeholder="VD: 15C-222.22">
+                    </div>
+                    <div class="form-group">
+                        <label>Tải trọng xe (Net Tonnage):</label>
+                        <input type="text" class="netTonnage" placeholder="VD: 35">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label>Trọng lượng hàng hóa (Gross Weight):</label>
+                        <input type="text" class="grossWeight" placeholder="VD: 25 tấn">
+                    </div>
+                    <div class="form-group">
+                        <label>Danh mục hàng hóa (Name of Cargo):</label>
+                        <input type="text" class="cargoName" placeholder="VD: Nông sản">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Số nhân viên (Number of staff):</label>
+                    <input type="text" class="staffNum" placeholder="VD: 1">
+                </div>
+            </div>
+        `;
+        container.insertAdjacentHTML('beforeend', truckHtml);
+    }
+
+    function removeTruckRow(id) {
+        const row = document.getElementById(`truck_row_${id}`);
+        if (row) row.remove();
+    }
+
+    async function generatePDF() {
+        const submitBtn = document.getElementById('submitBtn');
+        const loadingText = document.getElementById('loadingText');
+        
+        try {
+            submitBtn.disabled = true;
+            loadingText.style.display = 'block';
+
+            const fontUrl = 'https://hiepvk.github.io/kdyt/times.ttf';
+            const fontBytes = await fetch(fontUrl).then(res => {
+                if (!res.ok) throw new Error("Không thể tải tệp Font chữ!");
+                return res.arrayBuffer();
+            });
+
+            const pdfUrl = 'https://hiepvk.github.io/kdyt/TKKDYT.pdf';
+            const existingPdfBytes = await fetch(pdfUrl).then(res => {
+                if (!res.ok) throw new Error("Không thể tải file PDF phôi mẫu!");
+                return res.arrayBuffer();
+            });
+
+            const pdfDoc = await PDFLib.PDFDocument.load(existingPdfBytes);
+            pdfDoc.registerFontkit(fontkit);
+            const customFont = await pdfDoc.embedFont(fontBytes);
+            
+            const pages = pdfDoc.getPages();
+            const firstPage = pages[0];
+            const secondPage = pages[1];
+
+            // Đọc dữ liệu chung
+            const dateCargo = document.getElementById('dateCargo').value;
+            const goodsOwner = document.getElementById('goodsOwner').value;
+            const ownerAddress = document.getElementById('ownerAddress').value;
+            const dateConveyance = document.getElementById('dateConveyance').value;
+            const operatorName = document.getElementById('operatorName').value;
+            const conveyanceAddress = document.getElementById('conveyanceAddress').value;
+            const page2SignDate = document.getElementById('page2SignDate').value;
+
+            // Đọc dữ liệu bảng hàng hóa (Trang 1)
+            const page1CargoName1 = document.getElementById('page1CargoName1').value;
+            const page1CargoQty1 = document.getElementById('page1CargoQty1').value;
+            const page1CargoWeight1 = document.getElementById('page1CargoWeight1').value;
+
+            const page1CargoName2 = document.getElementById('page1CargoName2').value;
+            const page1CargoQty2 = document.getElementById('page1CargoQty2').value;
+            const page1CargoWeight2 = document.getElementById('page1CargoWeight2').value;
+
+            const page1TotalQty = document.getElementById('page1TotalQty').value;
+            const page1TotalWeight = document.getElementById('page1TotalWeight').value;
+
+            // Đọc dữ liệu bảng phương tiện (Trang 1)
+            const p1RegNo1 = document.getElementById('p1RegNo1').value;
+            const p1Qty1 = document.getElementById('p1Qty1').value;
+            const p1Tonnage1 = document.getElementById('p1Tonnage1').value;
+            const p1Staff1 = document.getElementById('p1Staff1').value;
+            const p1Passenger1 = document.getElementById('p1Passenger1').value;
+
+            const p1RegNo2 = document.getElementById('p1RegNo2').value;
+            const p1Qty2 = document.getElementById('p1Qty2').value;
+            const p1Tonnage2 = document.getElementById('p1Tonnage2').value;
+            const p1Staff2 = document.getElementById('p1Staff2').value;
+            const p1Passenger2 = document.getElementById('p1Passenger2').value;
+
+            // --- CHÈN CHỮ VÀO TRANG 1 ---
+            if (dateCargo) firstPage.drawText(dateCargo, { x: 430, y: 653, size: 11, font: customFont });
+            if (goodsOwner) firstPage.drawText(goodsOwner, { x: 210, y: 639, size: 12, font: customFont });
+            if (ownerAddress) firstPage.drawText(ownerAddress, { x: 105, y: 624, size: 11, font: customFont });
+            
+            // Điền bảng hàng hóa Trang 1 (Dòng 1: y=575, Dòng 2: y=553)
+            if (page1CargoName1) firstPage.drawText(page1CargoName1, { x: 75, y: 570, size: 10, font: customFont });
+            if (page1CargoQty1) firstPage.drawText(page1CargoQty1, { x: 230, y: 570, size: 10, font: customFont });
+            if (page1CargoWeight1) firstPage.drawText(page1CargoWeight1, { x: 390, y: 570, size: 10, font: customFont });
+
+            if (page1CargoName2) firstPage.drawText(page1CargoName2, { x: 75, y: 553, size: 10, font: customFont });
+            if (page1CargoQty2) firstPage.drawText(page1CargoQty2, { x: 230, y: 553, size: 10, font: customFont });
+            if (page1CargoWeight2) firstPage.drawText(page1CargoWeight2, { x: 390, y: 553, size: 10, font: customFont });
+
+            if (page1TotalQty) firstPage.drawText(page1TotalQty, { x: 230, y: 528, size: 10, font: customFont });
+            if (page1TotalWeight) firstPage.drawText(page1TotalWeight, { x: 390, y: 528, size: 10, font: customFont });
+
+            // Thông tin chung phần phương tiện
+            if (operatorName) firstPage.drawText(operatorName, { x: 440, y: 398, size: 11, font: customFont });
+            if (conveyanceAddress) firstPage.drawText(conveyanceAddress, { x: 120, y: 374, size: 11, font: customFont });
+            if (dateConveyance) firstPage.drawText(dateConveyance, { x: 410, y: 330, size: 11, font: customFont });
+
+            // Điền bảng phương tiện Trang 1 (Dòng 1: y=442, Dòng 2: y=420)
+            if (p1RegNo1) firstPage.drawText(p1RegNo1, { x: 75, y: 442, size: 10, font: customFont });
+            if (p1Qty1) firstPage.drawText(p1Qty1, { x: 200, y: 442, size: 10, font: customFont });
+            if (p1Tonnage1) firstPage.drawText(p1Tonnage1, { x: 290, y: 442, size: 10, font: customFont });
+            if (p1Staff1) firstPage.drawText(p1Staff1, { x: 390, y: 442, size: 10, font: customFont });
+            if (p1Passenger1) firstPage.drawText(p1Passenger1, { x: 495, y: 442, size: 10, font: customFont });
+
+            if (p1RegNo2) firstPage.drawText(p1RegNo2, { x: 75, y: 420, size: 10, font: customFont });
+            if (p1Qty2) firstPage.drawText(p1Qty2, { x: 200, y: 420, size: 10, font: customFont });
+            if (p1Tonnage2) firstPage.drawText(p1Tonnage2, { x: 290, y: 420, size: 10, font: customFont });
+            if (p1Staff2) firstPage.drawText(p1Staff2, { x: 390, y: 420, size: 10, font: customFont });
+            if (p1Passenger2) firstPage.drawText(p1Passenger2, { x: 495, y: 420, size: 10, font: customFont });
+
+            // --- CHÈN CHỮ VÀO TRANG 2 ---
+            if (secondPage) {
+                if (page2SignDate) secondPage.drawText(page2SignDate, { x: 75, y: 693, size: 11, font: customFont });
+
+                const truckRows = document.querySelectorAll('.truck-item');
+                let startY = 562; 
+                let lineSpacing = 22;
+
+                truckRows.forEach((rowElement, i) => {
+                    const currentY = startY - (i * lineSpacing);
+
+                    const plate = rowElement.querySelector('.truckPlate').value;
+                    const tonnage = rowElement.querySelector('.netTonnage').value;
+                    const weight = rowElement.querySelector('.grossWeight').value;
+                    const cargo = rowElement.querySelector('.cargoName').value;
+                    const staff = rowElement.querySelector('.staffNum').value;
+
+                    if (plate) secondPage.drawText(plate, { x: 75, y: currentY, size: 10, font: customFont });
+                    if (tonnage) secondPage.drawText(tonnage, { x: 175, y: currentY, size: 10, font: customFont });
+                    if (weight) secondPage.drawText(weight, { x: 250, y: currentY, size: 10, font: customFont });
+                    if (cargo) secondPage.drawText(cargo, { x: 340, y: currentY, size: 10, font: customFont });
+                    if (staff) secondPage.drawText(staff, { x: 495, y: currentY, size: 10, font: customFont });
+                });
+            }
+
+            const pdfBytes = await pdfDoc.save();
+            const blob = new Blob([pdfBytes], { type: "application/pdf" });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = "Giay_Khai_Bao_Y_Te_Moi.pdf";
+            link.click();
+
+        } catch (error) {
+            alert("Lỗi hệ thống: " + error.message);
+            console.error(error);
+        } finally {
+            submitBtn.disabled = false;
+            loadingText.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
