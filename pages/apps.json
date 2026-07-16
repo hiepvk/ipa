@@ -25,20 +25,12 @@
 "category":"other"},
 
 {"name":"Block OTA",
-"short-description":"iOS 15 - 17",
+"short-description":"iOS 15 - 26",
 "icon":"./icons/OTADisabler.png",
-"link":"https://betaprofiles.com/dl/block-ota/BlockOTA_18.mobileconfig",
+"link":"https://betaprofiles.com/dl/block-ota/noota-26.mobileconfig",
 "dev":"@betaprofiles",
-"version":"tvOS 18 beta",
+"version":"tvOS 26 beta",
 "category":"other"},
-
-{"name":"ESign",
-"short-description":"iOS 12 - 17",
-"icon":"./icons/esign.png",
-"link":"/ESign",
-"dev":"@yyyue",
-"version":"v5.0.2",
-"category":"esign"},
 
 {"name":"Install App",
 "short-description":"iOS All",
